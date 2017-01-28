@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Add Books{% endblock %}
+{% block head %}Add Books{% endblock %}
+{% block content %}
+    
+        
+    
+    
+    
+    <form class="form" method="post" action="/step2/about/" >{% csrf_token %}
+        <input type="text" placeholder="Book name" name="book_name">
+        <input type="text" placeholder="Price" name="price">
+        <input type="text" placeholder="Name" name="user">
+        <input type="text" placeholder="Phone No" name="phone">
+        <button type="submit"  value="submit" id="add-button">ADD</button>
+        
+
+
+        
+    </form>
+    <button type="button" onclick="window.location.href='/home/' ">Back</button>
+{% endblock %}
