@@ -1,7 +1,10 @@
 import re
 from django import forms
 class NameForm(forms.Form):
-    book_name = forms.CharField(label='Book Title', max_length=30)
-    price = forms.CharField(label='Price', max_length=5)
+    weight = forms.IntegerField(label='weight')
+    height = forms.IntegerField(label='height')
+    length = forms.IntegerField(label='width')
+    width = forms.IntegerField(label='length')
     user = forms.CharField(label='Your Name', max_length=100)
-    phone = forms.CharField(label='Your phone number', max_length=30)
+    location_from=forms.CharField(label='location from', max_length=30) 
+    location_to=forms.CharField(label='location to', max_length=30) 

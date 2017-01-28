@@ -29,6 +29,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'panju.sharma57@gmail.com'
+EMAIL_HOST_PASSWORD = 'classmate'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 # Application definition
 
@@ -82,9 +87,9 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'world',
-        'USER': 'root',
-        'PASSWORD': 'aloha',
+        'NAME': 'hackathon',
+        'USER': 'apple',
+        'PASSWORD': 'peach',
         'HOST': 'localhost',
         'PORT': '',
     }
