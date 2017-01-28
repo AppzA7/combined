@@ -10,29 +10,16 @@
 	{% endblock %}
 
 {% block head %}
-	
 <link rel="stylesheet" type="text/css" href="{% static 'css/home.css '%}"
-
-
-
 {% endblock %}
 
 {% block content %}
-    
-
-
 		<h1> 
 			Welcome {{ user.username }} !!! 
-			<br /> 
-			
-		
-			<br /> 
-		</h1>
-   
-		
+		</h1> 
+		<br/>
 		<button type="button" onclick="window.location.href='/step2/view_stuff/' ">Buy Tickets</button>
-		<br/>
-		<br/>
-
+		<button type="button" onclick="window.location.href='/step2/about/' ">Submit Package</button>
+		<br/><br/>
 		<button type="button" onclick="window.location.href='/logout/' ">Logout</button>
 {% endblock %}

@@ -31,7 +31,7 @@ def fetch_data(request):
             print value.view()
         # train_dict={'train': Tickets.objects.filter(journey_id=train_requested)}
         print response
-
+        
 
 def req_made(request):
     context_dict={'boldmessage': Courier.objects.all() }
